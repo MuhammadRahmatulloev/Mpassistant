@@ -9,6 +9,8 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -202,14 +204,8 @@
   .top-\[46\%\] {
     top: 46%;
   }
-  .top-\[53\%\] {
-    top: 53%;
-  }
   .top-\[57\%\] {
     top: 57%;
-  }
-  .top-\[60\%\] {
-    top: 60%;
   }
   .top-\[72\%\] {
     top: 72%;
@@ -219,12 +215,6 @@
   }
   .right-\[53\%\] {
     right: 53%;
-  }
-  .right-\[55\%\] {
-    right: 55%;
-  }
-  .right-\[60\%\] {
-    right: 60%;
   }
   .bottom-\[3\%\] {
     bottom: 3%;
@@ -241,14 +231,8 @@
   .left-\[30\%\] {
     left: 30%;
   }
-  .left-\[45\%\] {
-    left: 45%;
-  }
   .left-\[50\%\] {
     left: 50%;
-  }
-  .left-\[55\%\] {
-    left: 55%;
   }
   .left-\[60\%\] {
     left: 60%;
@@ -325,6 +309,9 @@
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
+  .h-107 {
+    height: calc(var(--spacing) * 107);
+  }
   .h-125 {
     height: calc(var(--spacing) * 125);
   }
@@ -337,14 +324,17 @@
   .h-160 {
     height: calc(var(--spacing) * 160);
   }
+  .h-\[4\] {
+    height: 4;
+  }
   .h-\[50\%\] {
     height: 50%;
   }
   .h-\[65\%\] {
     height: 65%;
   }
-  .h-\[70\%\] {
-    height: 70%;
+  .h-\[430px\] {
+    height: 430px;
   }
   .w-25 {
     width: calc(var(--spacing) * 25);
@@ -364,14 +354,8 @@
   .w-\[55\%\] {
     width: 55%;
   }
-  .w-\[60\%\] {
-    width: 60%;
-  }
   .w-\[65\%\] {
     width: 65%;
-  }
-  .w-\[70\%\] {
-    width: 70%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -412,6 +396,9 @@
   .justify-center {
     justify-content: center;
   }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -426,6 +413,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .self-center {
+    align-self: center;
   }
   .self-start {
     align-self: flex-start;
@@ -531,8 +521,21 @@
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
+  .py-7\.5 {
+    padding-block: calc(var(--spacing) * 7.5);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
   .text-\[14px\] {
     font-size: 14px;
@@ -552,14 +555,8 @@
   .text-\[24px\] {
     font-size: 24px;
   }
-  .text-\[25px\] {
-    font-size: 25px;
-  }
   .text-\[26px\] {
     font-size: 26px;
-  }
-  .text-\[27px\] {
-    font-size: 27px;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -630,11 +627,6 @@
       top: -52%;
     }
   }
-  .lg\:top-\[-55\%\] {
-    @media (width >= 64rem) {
-      top: -55%;
-    }
-  }
   .lg\:top-\[10\%\] {
     @media (width >= 64rem) {
       top: 10%;
@@ -643,11 +635,6 @@
   .lg\:top-\[20\%\] {
     @media (width >= 64rem) {
       top: 20%;
-    }
-  }
-  .lg\:top-\[25\%\] {
-    @media (width >= 64rem) {
-      top: 25%;
     }
   }
   .lg\:top-\[30\%\] {
@@ -665,19 +652,9 @@
       right: 60%;
     }
   }
-  .lg\:right-\[80\%\] {
-    @media (width >= 64rem) {
-      right: 80%;
-    }
-  }
   .lg\:right-\[85\%\] {
     @media (width >= 64rem) {
       right: 85%;
-    }
-  }
-  .lg\:right-\[90\%\] {
-    @media (width >= 64rem) {
-      right: 90%;
     }
   }
   .lg\:left-\[43\%\] {
@@ -735,6 +712,11 @@
       height: calc(var(--spacing) * 75);
     }
   }
+  .lg\:h-90 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 90);
+    }
+  }
   .lg\:h-120 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 120);
@@ -748,6 +730,11 @@
   .lg\:h-full {
     @media (width >= 64rem) {
       height: 100%;
+    }
+  }
+  .lg\:w-46 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 46);
     }
   }
   .lg\:w-\[10\%\] {
@@ -778,6 +765,21 @@
   .lg\:w-\[40\%\] {
     @media (width >= 64rem) {
       width: 40%;
+    }
+  }
+  .lg\:w-\[45\%\] {
+    @media (width >= 64rem) {
+      width: 45%;
+    }
+  }
+  .lg\:w-\[47\%\] {
+    @media (width >= 64rem) {
+      width: 47%;
+    }
+  }
+  .lg\:w-\[48\%\] {
+    @media (width >= 64rem) {
+      width: 48%;
     }
   }
   .lg\:w-\[50\%\] {
