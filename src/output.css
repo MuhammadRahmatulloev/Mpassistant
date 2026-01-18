@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
@@ -169,14 +170,44 @@
   .relative {
     position: relative;
   }
+  .top-\[5\%\] {
+    top: 5%;
+  }
+  .top-\[10\%\] {
+    top: 10%;
+  }
+  .top-\[10\] {
+    top: 10;
+  }
   .top-\[15\%\] {
     top: 15%;
   }
   .top-\[20\%\] {
     top: 20%;
   }
+  .top-\[30\%\] {
+    top: 30%;
+  }
+  .top-\[40\%\] {
+    top: 40%;
+  }
   .top-\[45\%\] {
     top: 45%;
+  }
+  .right-\[30\%\] {
+    right: 30%;
+  }
+  .right-\[40\%\] {
+    right: 40%;
+  }
+  .right-\[42\%\] {
+    right: 42%;
+  }
+  .right-\[45\%\] {
+    right: 45%;
+  }
+  .right-\[50\%\] {
+    right: 50%;
   }
   .bottom-\[3\%\] {
     bottom: 3%;
@@ -186,6 +217,12 @@
   }
   .left-\[20\%\] {
     left: 20%;
+  }
+  .left-\[28\%\] {
+    left: 28%;
+  }
+  .left-\[30\%\] {
+    left: 30%;
   }
   .left-\[60\%\] {
     left: 60%;
@@ -226,17 +263,20 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
-  }
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
   .h-70 {
     height: calc(var(--spacing) * 70);
   }
+  .h-100 {
+    height: calc(var(--spacing) * 100);
+  }
   .h-125 {
     height: calc(var(--spacing) * 125);
+  }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
   }
   .h-157 {
     height: calc(var(--spacing) * 157);
@@ -244,11 +284,14 @@
   .h-160 {
     height: calc(var(--spacing) * 160);
   }
-  .h-\[630px\] {
-    height: 630px;
+  .h-\[50\%\] {
+    height: 50%;
   }
   .w-\[25\%\] {
     width: 25%;
+  }
+  .w-\[40\%\] {
+    width: 40%;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -256,11 +299,17 @@
   .w-\[55\%\] {
     width: 55%;
   }
+  .w-\[70\%\] {
+    width: 70%;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[ful\] {
+    width: ful;
   }
   .w-full {
     width: 100%;
@@ -301,6 +350,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .self-center {
+    align-self: center;
+  }
   .self-start {
     align-self: flex-start;
   }
@@ -327,6 +379,9 @@
   }
   .bg-\[\#F6FAFF\] {
     background-color: #F6FAFF;
+  }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -381,6 +436,9 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[24px\] {
     font-size: 24px;
   }
@@ -430,9 +488,134 @@
       position: absolute;
     }
   }
+  .lg\:top-\[-\%\] {
+    @media (width >= 64rem) {
+      top: -%;
+    }
+  }
+  .lg\:top-\[-10\%\] {
+    @media (width >= 64rem) {
+      top: -10%;
+    }
+  }
+  .lg\:top-\[-13\%\] {
+    @media (width >= 64rem) {
+      top: -13%;
+    }
+  }
+  .lg\:top-\[-15\%\] {
+    @media (width >= 64rem) {
+      top: -15%;
+    }
+  }
+  .lg\:top-\[-18\%\] {
+    @media (width >= 64rem) {
+      top: -18%;
+    }
+  }
+  .lg\:top-\[-20\%\] {
+    @media (width >= 64rem) {
+      top: -20%;
+    }
+  }
+  .lg\:top-\[-30\%\] {
+    @media (width >= 64rem) {
+      top: -30%;
+    }
+  }
+  .lg\:top-\[-45\%\] {
+    @media (width >= 64rem) {
+      top: -45%;
+    }
+  }
+  .lg\:top-\[-46\%\] {
+    @media (width >= 64rem) {
+      top: -46%;
+    }
+  }
+  .lg\:top-\[-47\%\] {
+    @media (width >= 64rem) {
+      top: -47%;
+    }
+  }
+  .lg\:top-\[-50\%\] {
+    @media (width >= 64rem) {
+      top: -50%;
+    }
+  }
+  .lg\:top-\[0\%\] {
+    @media (width >= 64rem) {
+      top: 0%;
+    }
+  }
+  .lg\:top-\[5\%\] {
+    @media (width >= 64rem) {
+      top: 5%;
+    }
+  }
+  .lg\:top-\[20\%\] {
+    @media (width >= 64rem) {
+      top: 20%;
+    }
+  }
+  .lg\:right-\[50\%\] {
+    @media (width >= 64rem) {
+      right: 50%;
+    }
+  }
+  .lg\:right-\[55\%\] {
+    @media (width >= 64rem) {
+      right: 55%;
+    }
+  }
+  .lg\:right-\[60\%\] {
+    @media (width >= 64rem) {
+      right: 60%;
+    }
+  }
+  .lg\:right-\[70\%\] {
+    @media (width >= 64rem) {
+      right: 70%;
+    }
+  }
+  .lg\:left-\[0\%\] {
+    @media (width >= 64rem) {
+      left: 0%;
+    }
+  }
+  .lg\:left-\[40\%\] {
+    @media (width >= 64rem) {
+      left: 40%;
+    }
+  }
   .lg\:left-\[43\%\] {
     @media (width >= 64rem) {
       left: 43%;
+    }
+  }
+  .lg\:left-\[50\%\] {
+    @media (width >= 64rem) {
+      left: 50%;
+    }
+  }
+  .lg\:left-\[55\%\] {
+    @media (width >= 64rem) {
+      left: 55%;
+    }
+  }
+  .lg\:left-\[60\%\] {
+    @media (width >= 64rem) {
+      left: 60%;
+    }
+  }
+  .lg\:left-\[70\%\] {
+    @media (width >= 64rem) {
+      left: 70%;
+    }
+  }
+  .lg\:left-\[90\%\] {
+    @media (width >= 64rem) {
+      left: 90%;
     }
   }
   .lg\:flex {
@@ -465,24 +648,14 @@
       height: calc(var(--spacing) * 120);
     }
   }
-  .lg\:h-130 {
-    @media (width >= 64rem) {
-      height: calc(var(--spacing) * 130);
-    }
-  }
-  .lg\:h-\[5\%\] {
-    @media (width >= 64rem) {
-      height: 5%;
-    }
-  }
-  .lg\:h-\[50\%\] {
-    @media (width >= 64rem) {
-      height: 50%;
-    }
-  }
   .lg\:h-\[70\%\] {
     @media (width >= 64rem) {
       height: 70%;
+    }
+  }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
     }
   }
   .lg\:w-\[50\%\] {
@@ -490,14 +663,34 @@
       width: 50%;
     }
   }
-  .lg\:w-\[70\%\*\:\] {
+  .lg\:w-\[60\%\] {
     @media (width >= 64rem) {
-      width: 70%*:;
+      width: 60%;
+    }
+  }
+  .lg\:w-\[62\%\] {
+    @media (width >= 64rem) {
+      width: 62%;
+    }
+  }
+  .lg\:w-\[63\%\] {
+    @media (width >= 64rem) {
+      width: 63%;
+    }
+  }
+  .lg\:w-\[65\%\] {
+    @media (width >= 64rem) {
+      width: 65%;
     }
   }
   .lg\:w-\[70\%\] {
     @media (width >= 64rem) {
       width: 70%;
+    }
+  }
+  .lg\:w-\[80\%\] {
+    @media (width >= 64rem) {
+      width: 80%;
     }
   }
   .lg\:w-\[90\%\] {
@@ -533,6 +726,11 @@
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:self-center {
+    @media (width >= 64rem) {
+      align-self: center;
     }
   }
   .lg\:p-10 {
@@ -573,12 +771,6 @@
   .lg\:text-\[70px\] {
     @media (width >= 64rem) {
       font-size: 70px;
-    }
-  }
-  .lg\:shadow-2xl {
-    @media (width >= 64rem) {
-      --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .lg\:shadow-lg {
